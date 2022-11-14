@@ -1,1 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: hsl(219, 30%, 18%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* navbar css */
+nav{
+    width: 85%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: hsl(219, 30%, 18%); */
+}
+.logo{
+    width: 130px;
+    height: auto;
+    cursor: pointer;
+}
+ul.navbar{
+    list-style: none;
+    display: flex;
+}
+ul.navbar li{
+    width: 100px;
+}
+ul.navbar li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+ul.navbar li a:hover{
+    text-decoration: underline;
+}
+
+/* 1st section css */
+.section-1{
+    /* z-index: -1; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* background-color: hsl(219, 30%, 18%); */
+}
+.intro-desc{
+    width: 470px; /* 600px */
+    margin: auto;
+    margin-bottom: 30px;
+}
+.illustration{
+    width: 470px;
+    margin-bottom: 30px;
+}
+.intro-desc h1{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 25px;
+    font-family: 'Raleway',sans-serif;
+}.intro-desc p{
+    width: 500px;
+    line-height: 1.6rem;
+    font-weight: 700px;
+    margin: 0 auto 30px;
+    /* position: relative;
+    z-index: 3; */
+}
+#btn{
+    /* position: relative;
+    z-index: 2; */
+    width: 250px;
+    padding: 14px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(176, 68%, 64%);
+    color: hsl(0, 0%, 100%);
+    /* background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%); */
+}
+#btn a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+.curvy-bg{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    /* position: absolute; */
+    top: -210px;
+    z-index: -1;
+}
+
+/* 2nd section css */
+.section-2{
+    width: 100%;
+    height: auto;
+    background-color: hsl(218, 28%, 13%);
+    position: relative;
+    top: -210px;
+    z-index: -1;
+}
+.services{
+    width: 70%;
+    min-height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.services-wrapper{
+    margin: 30px 0;
+}
+.services-wrapper img{
+    margin: 70px;
+    height: auto;
+    margin-bottom: 25px;
+}
+.service-desc{
+    width: 400px;
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+.service-desc h2{
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Section 3 starts here */
+.section-3 img{
+    width: 550px;
+    height: auto;
+}
+.section-3{
+    width: 85%;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* position: relative;
+    top: 100px; */
+}
+.section-3-desc{
+    width: 550px;
+}
+.section-3-desc h1{
+    font-size: 2rem;
+    width: 300px;
+    margin-bottom: 15px;
+    font-family: 'Raleway',sans-serif;
+}
+.section-3-desc p{
+    margin-bottom: 30px;
+}
+.section-3-desc a{
+    color: hsl(176, 68%, 64%);
+    margin-right: 7px;
+}
+
+/* Testimonial section starts here */
+.testimonial-section{
+    width: 100%;
+    min-height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    background-color:  hsl(218, 28%, 13%);
+}
+.testimonial-card{
+    width: 385px;
+    height: 200px;
+    background-color: hsl(219, 30%, 18%);
+    padding: 25px 15px;
+    margin-left: 50px;
+    box-shadow: 2px 2px 3px hsl(218, 28%, 13%);
+}
+
+
+/* media query for small devices */
+@media screen and (max-width: 375px){
+    nav{
+        width:90%;
+    }
+    .logo{
+        width: 70px;
+        height: auto;
+    }
+    ul.navbar li{
+        width: 70px;
+        margin-right: 5px;
+    }
+    ul.navbar li:nth-child(2) {
+        width: 50px;
+    }
+    ul.navbar li:nth-child(3) {
+        width: 50px;
+    }
+
+    /* media query of section 1 */
+    .section-1{
+        width: 300px;
+        margin: auto;
+    }
+    .illustration{
+        width: 350px;
+    }
+    .intro-desc{
+        width: 300px;
+        margin: auto;
+    }
+    .intro-desc h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .intro-desc p{
+        width: 318px;
+        line-height: 1.5rem;
+    }
+    #btn{
+        width: 200px;
+    }
+    .curvy-bg{
+        display: none;
+    }
+
+     /* Media query section 2 start here  */
+     .services{
+        width: 85%;
+        margin: 250px auto 0 ;
+    }
+    .service-desc{
+        width: 300px;
+        margin: auto;
+    }
+    .service-desc h2{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    .service-desc p{
+        font-size: 14px;
+        width: 200px;
+        margin: auto;
+    }
+
+    /* section 3 media query starts here */
+    .section-3{
+        margin-top: 0;
+    }
+    .section-3 img{
+        width: 300px;
+        height: auto;
+    }
+    .section-3-desc h1{
+        font-size: 1rem;
+        margin: 15px 0;
+    }
+    .section-3-desc p{
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+}
